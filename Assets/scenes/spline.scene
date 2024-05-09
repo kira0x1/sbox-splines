@@ -1,0 +1,125 @@
+{
+  "__guid": "a1797408-e0a9-4733-ab23-1be2d9a994da",
+  "GameObjects": [
+    {
+      "__guid": "af017cd9-038c-4b9a-b255-b8cb0d0fb7c1",
+      "Flags": 0,
+      "Name": "Plane",
+      "Scale": "2,2,2",
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "8bc27f82-4be8-4236-9fbd-0007ece892c4",
+          "BodyGroups": 18446744073709551615,
+          "MaterialOverride": "materials/floor_grid.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "111f3364-4f50-4d74-9a34-adba3a6b9135",
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "-269.7632,0,156.5",
+      "Rotation": "0,0.2266513,0,0.973976",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "8d27ef57-207c-4244-9fc7-7c6d3eeb49c4",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "__guid": "45eb3b8f-523d-4cb0-9d18-e27bbe82f0ed",
+      "Flags": 0,
+      "Name": "Sun",
+      "Position": "0,0,160",
+      "Rotation": "0,0.5,0,0.8660256",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "e77af2d7-2886-436f-b558-ad371c64bbed",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.91373,0.98039,1,1",
+          "Shadows": true,
+          "SkyColor": "0.05882,0.07451,0.08235,1"
+        }
+      ]
+    },
+    {
+      "__guid": "357e6763-6f12-4051-99a8-988bd6ec5acf",
+      "Flags": 0,
+      "Name": "Spline",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Kira.Splines.BezierCurveRenderer",
+          "__guid": "d30b7e28-2696-4b9d-aabd-44e2059bcdd1",
+          "curve": {
+            "points": [
+              "41.20278,40.64326,7.030262",
+              "123.4009,27.25471,75.20755",
+              "187.6236,42.3068,1.21224"
+            ]
+          },
+          "lineSteps": 10
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "spline",
+  "Description": "",
+  "LastSaved": "2024-05-09T09:08:14.3204037\u002B01:00",
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}
